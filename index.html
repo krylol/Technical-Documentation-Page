@@ -1,1 +1,59 @@
-e 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS B T</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  <div id="content">
+        <main id="main-doc">
+            <section id="CSS_selectors" class="main-section"><header >CSS selectors</header>
+                <ul>
+                    <li>Class selector: <br> Using this selector allow you to pick an element that has a class. You use . and then the class name to select it <br>               <code>class="intro" .intro{font-size:25px;}</code> </li> <br>
+                    <li>ID selector: <br> Using this selector allow you to pick an element that has an ID. You use # followed by the ID name. <br> <code>id=intro #intro{color:blue}</code> </li><br>
+                    <li>Element selector: With this selector you can pick all the elements of the same kind, you can edit all the divs the p or even the a link. <br> <code>p{background-color:black;}</code></li><br>
+                    <li>Selectors priority: 
+                    <ol>
+                        <li>Inline styles An inline style is attached directly to the element to be styled. <br> <code> h1 style="color: #ffffff;"</code></li><br>
+                        <li>ID element the ID is a unique identifier for the page elements. This element should be used only one time you shouldn't use the same ID for different elements. <br><code>#intro #play #changing</code></li><br>
+                        <li>Class elements, you can assign the same class to your div or p element. <br> <code>div class="color"  p class="color" .color </code></li>
+                        <li>Elements and pseudo-elements - This category includes element names and pseudo-elements. <br> <code>h1, p, div,</code></li><br>
+                        <li>You can use the !important to make the style you want have the priority even if it shouldn't have it. <br> <code> p id=thing p{color: "red"!important;} #thing{color="green"}</code><br>If you try this the element will be red even when the ID has priority using important overwrites it and makes the p element more important.</li><br>
+                    </ol>
+                </li>
+                </ul>
+
+            </section>
+            <section id="Ways_to_change_font" class="main-section"><header >Ways to change font</header>
+            <p>There are a few ways to change font type, size make it bold or italic. I will only talk about the most used, the way to change font, the way to change the size of the words and you will learn to change a word type to bold or make it only a bit bold if need it.
+            <p>We will start with changing the size of the letters. First we need to choose the element we want to change and then use this format. <br> <code>p class="thing" .thing{font-size:20px;}</code><br> With this you can change the font to 20px. You can input any size you want.</p>
+            </p>
+            <p>The next way is to change the  font. With this you can use the font you like or the font you think will suit your page better. <br><code>p id="thing" #thing{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}</code> <br> The first font you write is the one you want to use first. If the browser you are using don't have that font available it will take the second you wrote. In this case it will try to use Franklin but if Franklin is unavailable it will use arial narrow, if that one it's not in the browser it will take te next one. Usually browsers have all fonts but it's a nice a way to prevent your page from not looking the way you want.</p> 
+            <p>The last style we are going to learn is the way to make letters or words bolder. You can use it on a few words, all the text or only the word you want to. <br> <code>   p id=thing #thing{font-size: bold} </code> <br> With this the letter will be bold. You can try it yourself and then change bold to bolder or to a number from 100 to 900 to see how it changes.
+            </p>
+            </section>
+            <section id="Playing_with_color" class="main-section"><header >Playing with color</header>
+            <p>One of the easiest ways to make your page look beautiful. After using color you need to adjust margins, paddings and fonts but this is the basic way to make it stylier. <br> Here we got a few choices but we will learn the more common ones. <ul><li>First is the way to change the background color. <br> <code>p class=thing .thing{background-color: antiquewhite;}</code> <br> With this all the background will be antiquewhite. You can use any color you want and learn more about colors in the mozilla documentation page. <br>     </li><li>You can also change the font colors. It's easy and will make some parts of the web beautiful. <br> <code>p p{color:red}</code><br>An easy way to make all the letters of a p element in red color.</li></ul></p>
+            </section>
+            <section id="Creating_boxes_and_borders" class="main-section"><header >Creating boxes and borders</header>
+            <p>Creating borders can isolate elemnts or remark them. Is very useful for creating bars, links, or any other thing you want to remark. <br> <code>p id=thing #thing{border-style: solid;}</code><br> With the color styling we learned before we can make those borders look any way we want. With this we created and isolated element, that is easy to view. </p>
+            </section>
+            <section id="How_to_center_the_elements" class="main-section"><header >How to center the elements</header>
+            <p> This is something you see in every page. All the elements are in the middle, in their own background color, centered and styled. It's something basic because only a few pages like this one are not centered and take all the space they can. Learning this will make a page styler with 6 lines of codes. </p>   <br> <code>div class=container .thing{max-width: 500px; maring: auto;background-color:silver;}</code> <br> <p> With this few lines you can put all the content in the middle of the page. You should use a div with and id of container, this div should be around the elements you want to center, and then you just apply the CSS style over. </p>
+            </section>
+        </div>
+            <nav id="navbar">
+                <header id="bar">CSS Basic Tips</header>
+                <a class="nav-link" href="#CSS_selectors"> CSS selectors</a>
+                <a class="nav-link" href="#Ways_to_change_font">Ways to change font</a>
+                <a class="nav-link" href="#Playing_with_color">Playing with color</a>
+                <a class="nav-link" href="#Creating_boxes_and_borders">Creating boxes and borders</a>
+                <a class="nav-link" href="#How_to_center_the_elements">How to center the elements</a>
+            </nav>
+        
+        </main>
+    
+</body>
+</html>
